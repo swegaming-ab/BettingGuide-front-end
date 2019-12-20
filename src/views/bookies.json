@@ -1,0 +1,217 @@
+[
+        {
+            "name": "Bet365",
+            "color": "#649B3A",
+            "logo": "https://onlinecasino-uk.com/wp-content/uploads/bet365-logo.png",
+            "customerService": {
+                "lang": "20+",
+                "phone": false,
+                "chat": true,
+                "email": true,
+                "media": {
+                    "twitter": false,
+                    "facebook": false,
+                    "instagram": true
+                },
+                "open": "24/7"
+            },
+            "license": {
+                "visa": true,
+                "mastercard": true,
+                "paypal": true,
+                "skrill": false,
+                "neteller": true,
+                "muchbetter": true,
+                "ecopayz": true,
+                "bankwire": false,
+                "astropay": false
+            },
+            "betting": {
+                "sports": "31",
+                "markets": "300+",
+                "streaming": "yes",
+                "cashout": "Full and Partial",
+                "odds": "94%"
+            },
+            "markets": {
+                "sports": "34",
+                "liveFootball": "92",
+                "liveCricket": "34",
+                "liveStream": "Yes",
+                "cashout": "Full and Partial",
+                "liveBetting": "5.02"
+            }
+        },
+        {
+            "name": "Royal Panda",
+            "color": "#000",
+            "logo": "https://spinsia.com/wp-content/uploads/2018/03/royalpanda.png",
+            "customerService": {
+                "lang": "20+",
+                "phone": true,
+                "chat": false,
+                "email": true,
+                "media": {
+                    "twitter": true,
+                    "facebook": true,
+                    "instagram": false
+                },
+                "open": "24/7"
+            },
+            "license": {
+                "visa": true,
+                "mastercard": true,
+                "paypal": false,
+                "skrill": false,
+                "neteller": true,
+                "muchbetter": true,
+                "ecopayz": false,
+                "bankwire": false,
+                "astropay": true
+            },
+            "betting": {
+                "sports": "",
+                "markets": "159",
+                "streaming": "no",
+                "cashout": "",
+                "odds": ""
+            },
+            "markets": {
+                "sports": "35",
+                "liveFootball": "64",
+                "liveCricket": "46",
+                "liveStream": "No",
+                "cashout": "Limited",
+                "liveBetting": "4.87"
+            }
+        },
+        {
+            "name": "LeoVegas",
+            "color": "#F87032",
+            "logo": "https://slots.se/wp-content/uploads/2018/03/leovegas.png",
+            "customerService": {
+                "lang": "20+",
+                "phone": true,
+                "chat": true,
+                "email": false,
+                "media": {
+                    "twitter": false,
+                    "facebook": true,
+                    "instagram": false
+                },
+                "open": "24/7"
+            },
+            "license": {
+                "visa": true,
+                "mastercard": true,
+                "paypal": true,
+                "skrill": true,
+                "neteller": true,
+                "muchbetter": true,
+                "ecopayz": true,
+                "bankwire": true,
+                "astropay": true
+            },
+            "betting": {
+                "sports": "",
+                "markets": "90",
+                "streaming": "no",
+                "cashout": "",
+                "odds": ""
+            },
+            "markets": {
+                "sports": "34",
+                "liveFootball": "33",
+                "liveCricket": "29",
+                "liveStream": "No",
+                "cashout": "Limited",
+                "liveBetting": "4.96"
+            }
+        },
+        {
+            "name": "UniBet",
+            "color": "#147B45",
+            "logo": "https://www.stickpng.com/assets/images/5884a98e4549c0b81ec05478.png",
+            "customerService": {
+                "lang": "20+",
+                "phone": true,
+                "chat": true,
+                "email": false,
+                "media": {
+                    "twitter": false,
+                    "facebook": true,
+                    "instagram": false
+                },
+                "open": "24/7"
+            },
+            "license": {
+                "visa": true,
+                "mastercard": true,
+                "paypal": true,
+                "skrill": true,
+                "neteller": true,
+                "muchbetter": true,
+                "ecopayz": true,
+                "bankwire": true,
+                "astropay": true
+            },
+            "betting": {
+                "sports": "",
+                "markets": "400",
+                "streaming": true,
+                "cashout": "",
+                "odds": ""
+            },
+            "markets": {
+                "sports": "35",
+                "liveFootball": "83",
+                "liveCricket": "54",
+                "liveStream": "Yes",
+                "cashout": "Full and Partial",
+                "liveBetting": "2.92"
+            }
+        },
+        {
+            "name": "888sport",
+            "color": "#ED6501",
+            "logo": "https://yourpokercash.com/wp-content/uploads/2018/04/888sport-logo-456x226.png",
+            "customerService": {
+                "lang": "20+",
+                "phone": true,
+                "chat": true,
+                "email": false,
+                "media": {
+                    "twitter": false,
+                    "facebook": true,
+                    "instagram": false
+                },
+                "open": "24/7"
+            },
+            "license": {
+                "visa": true,
+                "mastercard": true,
+                "paypal": true,
+                "skrill": false,
+                "neteller": true,
+                "muchbetter": true,
+                "ecopayz": true,
+                "bankwire": false,
+                "astropay": true
+            },
+            "betting": {
+                "sports": "",
+                "markets": "250",
+                "streaming": "Bet & Watch",
+                "cashout": "",
+                "odds": ""
+            },
+            "markets": {
+                "sports": "28",
+                "liveFootball": "45",
+                "liveCricket": "63",
+                "liveStream": "Bet & Watch",
+                "cashout": "Full and Partial",
+                "liveBetting": "6.12"
+            }
+        }
+    ]

@@ -1,0 +1,17 @@
+Pages:
+
+Homepage
+    -add 'introducing academy'-section
+ListView
+Single bookie/review page
+    -casino offer & betting offer
+    -facts about bookie
+    -bonus info
+    -promotions
+    -what services they offer
+    -section about licensing
+
+Academy
+    -guides
+    -showing every guides
+    -
