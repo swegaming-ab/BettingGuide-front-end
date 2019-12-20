@@ -7,10 +7,22 @@
                 <hr>
                 <div class="wrap as f-gray fw flex">
                     <div class="col c as fs">
-                        <h5 class=" mt-20 mb-20 fw">STEP {{step}}</h5>
-                        <p v-if="step === 1" class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p v-if="step === 2" class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumsadfsadfsafasasdf.</p>
-                        <p v-if="step === 3" class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumsadfsadfsafasasdf.</p>
+                        <h5 v-if="step === 1" class=" mt-20 mb-20 fw">STEP 1: Choose a bookmaker</h5>
+                        <h5 v-if="step === 2" class=" mt-20 mb-20 fw">STEP 2: Complete a registration form</h5>
+                        <h5 v-if="step === 3" class=" mt-20 mb-20 fw">STEP 3: Add Payment method and deposit funds</h5>
+                        <h5 v-if="step === 4" class=" mt-20 mb-20 fw">STEP 4: Start betting!</h5>
+                        <p v-if="step === 1" class="txt mb-20">Compare the best betting sites for India customers in our tables above, and choose a bookmaker that suits your gambling style. Click through our link and you will land on one of the exclusive sign up offers.</p>
+                        <span v-if="step === 2" class="txt mb-20">
+                            <p>On the landing page, you will see the option to open an account, and this will take you to the registration form. Typically, you need to enter the following:</p>
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i>Country of Residence</li>
+                                <li><i class="fas fa-chevron-right"></i>Your name, email address, phone number, and physical address</li>
+                                <li><i class="fas fa-chevron-right"></i>Date of birth (to verify you are over 18)</li>
+                                <li><i class="fas fa-chevron-right"></i>Create a login (username and password)</li>
+                            </ul>
+                        </span>
+
+                        <p v-if="step === 3" class="txt mb-20">Either during or after the registration form, you will need to enter a valid payment method to deposit funds into your betting account. Betting sites offer a wide variety of payment methods</p>
                         <div class="btns fw flex">
                             <button @click="prev()" type="button" class="flex prev">Previous step</button>
                             <button @click="next()" type="button" class="flex next">Next step</button>
@@ -74,7 +86,21 @@ h5{
 .c{
     position: relative;
     height: 300px;
-
+    ul{width: 100%;}
+    li{
+        font-weight: lighter;
+        margin: 5px 0;
+        width: 100%;
+        font-family: nudista-web, sans-serif!important;
+        i{
+            position: relative;
+            top: -2px;
+            margin-right: 10px;
+            font-size: 12px;
+            color: #189e0c;
+            font-weight: bold;
+        }
+    }
 }
 .col{
     .img{
@@ -82,7 +108,7 @@ h5{
         height: 100%;
         position: absolute;
     }
-    p{height: 180px;}
+    .txt{height: 180px;}
 }
 hr{
     height: 2px;
@@ -106,8 +132,8 @@ hr{
         box-shadow: 1px 2px 7px 1px rgba(0,0,0,0.5);
         box-shadow: 0 4px 8px 0 rgba(108,127,135,.5), 0 1px 4px 0 rgba(108,127,135,.9);
         &:hover{
-            // border-top: 3px solid #189e0c;
-            background: #127709;
+            border-bottom: 3px solid #189e0c;
+            // box-shadow: none;            
         }
     }
 }

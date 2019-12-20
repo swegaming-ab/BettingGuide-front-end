@@ -8,16 +8,21 @@
       </div>
       <div class="wrapper fs fw flex">
           <h2 class="f-gray light">Please select your country:</h2>
-          <div class="wrap">
+          <router-link to="/" class="wrap">
               <img src="../assets/icons/flags/indiaoverlay.png" class="overlay" alt="">
               <img src="../assets/icons/flags/india.png" class="flag" alt="">
               <h3>India</h3>
-          </div>
-          <div class="wrap">
+          </router-link>
+          <router-link to="/" class="wrap">
               <img src="../assets/icons/flags/englandoverlay.png" class="overlay" alt="">
               <img src="../assets/icons/flags/england.png" class="flag" alt="">
               <h3>England</h3>
-          </div>
+          </router-link>
+          <router-link to="/" class="wrap">
+              <img src="../assets/icons/flags/nigeriaoverlay.png" class="overlay" alt="">
+              <img src="../assets/icons/flags/nigeria.png" class="flag" alt="">
+              <h3>Nigeria</h3>
+          </router-link>
       </div>
   </div>
 </template>

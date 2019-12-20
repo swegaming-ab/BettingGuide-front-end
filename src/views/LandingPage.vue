@@ -23,7 +23,7 @@
         <!-- <Calculator/> -->
         <!-- <TrustUs/> -->
         <Rating/>
-        <GetStarted/>
+        <!-- <GetStarted/> -->
         <!-- <Faq/> -->
 
 
