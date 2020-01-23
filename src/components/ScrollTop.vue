@@ -1,5 +1,5 @@
 <template>
-    <button @click="scrollMe()" class="bg-blue" name="button">
+    <button @click="scrollMe()" class="bg-orange" name="button">
         <i class="material-icons">expand_less</i>
     </button>
 </template>

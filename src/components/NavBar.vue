@@ -22,7 +22,7 @@
                         <transition name="fade"><i v-if="!hover" class="fas fa-chevron-down"></i></transition>
                     </li>
                 </router-link>
-                <router-link :to="'single2'">
+                <router-link :to="'academy'">
                     <li @mouseenter="hover = true" @mouseleave="hover = false">
                         Academy
                         <transition name="fade"><i v-if="hover" class="fas fa-chevron-up"></i></transition>

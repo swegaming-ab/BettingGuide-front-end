@@ -49,18 +49,18 @@ export default {
                     title: "Licensing & Safety",
                     value: "9"
                 },
-                {
-                    title: "Live Betting",
-                    value: "7"
-                },
-                {
-                    title: "Sports & Betting Markets",
-                    value: "8"
-                },
-                {
-                    title: "Betting Odds",
-                    value: "9"
-                },
+                // {
+                //     title: "Live Betting",
+                //     value: "7"
+                // },
+                // {
+                //     title: "Sports & Betting Markets",
+                //     value: "8"
+                // },
+                // {
+                //     title: "Betting Odds",
+                //     value: "9"
+                // },
                 {
                     title: "Design & Usability",
                     value: "7"

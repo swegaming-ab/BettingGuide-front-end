@@ -62,7 +62,7 @@ export default {
         // .head{text-transform: uppercase; border: none; }
         .col-2{flex: 2!important;}
         .col-3{flex: 3!important;}
-        .thead{border: none!important; margin-bottom: 7px;}
+        .thead{border: none!important;}
         tr{
             display: flex;
             border-top: 1px solid #e6e6e6;
@@ -83,7 +83,7 @@ export default {
                 i{opacity: 1;}
             }
         }
-        tr:nth-child(even){
+        tr:nth-child(odd){
             background: #f7f7f7;
             td{
                 button{

@@ -3,7 +3,7 @@
         <div class="col-group content">
             <div class="head fw flex">
                 <img src="../../assets/icons/tables/payment1.png" alt="">
-                <h3 class="f-gray mt-20 bold"><span class="bold">P</span>ayment</h3>
+                <h4 class="f-gray mt-20 bold"><span class="bold">P</span>ayment</h4>
             </div>
             <div class="col">
                 <paymentTable :data="data"/>
@@ -11,29 +11,24 @@
             </div>
         </div>
 
-        <div class="col-group table-t as">
-            <!-- <div class="wrap fw flex as"> -->
-                <div class="col col-2 fs">
-                    <h5 class="bold f-gray">PARAGRAPH TITLE</h5>
-                    <p class="f-gray mb-20 mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="bold mt-20">Maybe a list of pointers worth knowing about payment</p>
-                    <ul>
-                        <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
-                        <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
-                        <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
-                        <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
-                        <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
-                        <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <img src="https://i.pinimg.com/originals/a1/33/66/a13366d4b54a59100b2084db86d2d909.jpg" alt="">
-                </div>
-            <!-- </div> -->
-            <!-- <div class="wrap flex as fs fw">
-
-            </div> -->
-        </div>
+        <!-- <div class="col-group table-t as">
+            <div class="col col-2 fs">
+                <h5 class="bold f-gray">PARAGRAPH TITLE</h5>
+                <p class="f-gray mb-20 mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="bold mt-20">Maybe a list of pointers worth knowing about payment</p>
+                <ul>
+                    <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
+                    <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
+                    <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
+                    <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
+                    <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
+                    <li><i class="fas fa-angle-double-right"></i>Lorem ipsum</li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="https://i.pinimg.com/originals/a1/33/66/a13366d4b54a59100b2084db86d2d909.jpg" alt="">
+            </div>
+        </div> -->
 
         <!-- <div class="col-group fw py80"></div>
 
@@ -44,7 +39,7 @@
             </div>
             <div class="col">
                 <div class="img flex bxs"><img src="../../assets/icons/tables/support1.png" alt=""></div>
-                <h3 class="f-gray mt-20">Customer <span class="f-orange bold">Support</span></h3>
+                <h4 class="f-gray mt-20">Customer <span class="f-orange bold">Support</span></h4>
             </div>
         </div>
 
@@ -53,7 +48,7 @@
         <div class="col-group content custom">
             <div class="fw flex">
                 <div class="img flex bxs"><img src="../../assets/icons/tables/market.png" alt=""></div>
-                <h3 class="f-gray mt-20 tl mb-20">Sports <span class="f-orange bold">&</span> Betting Markets</h3>
+                <h4 class="f-gray mt-20 tl mb-20">Sports <span class="f-orange bold">&</span> Betting Markets</h4>
             </div>
             <div class="col">
                 <marketsTable :data="data"/>
@@ -110,7 +105,7 @@
     @media only screen and (min-width: 1200px) {
         width: 1100px;
         img{width: 150px;}
-        h3{width: 100%; text-align: center;}
+        h4{width: 100%; text-align: center;}
     }
 }
 .table-t{
@@ -145,7 +140,7 @@
         width: 30px;
         margin-right: 10px;
     }
-    h3{
+    h4{
         text-transform: uppercase;
         width: auto;
     }
@@ -161,7 +156,7 @@
     img{width: 60%;}
 }
 .custom{
-    h3{
+    h4{
         width: auto;
     }
     .img{

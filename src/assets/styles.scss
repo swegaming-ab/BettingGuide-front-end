@@ -1,12 +1,12 @@
 // compileOnSave: false
 
 /* font import*/
-@import url('https://font.googleapis.com/css?family=Public+Sans&display=swap');
+// @import url('https://font.googleapis.com/css?family=Public+Sans&display=swap');
 @import url("https://use.typekit.net/dph6plz.css");
-@import url('https://font.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://font.googleapis.com/css?family=Lato:400,700,900&display=swap');
-@import url('https://font.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap');
-@import url('https://font.googleapis.com/css?family=Quicksand&display=swap');
+// @import url('https://font.googleapis.com/css?family=Open+Sans&display=swap');
+// @import url('https://font.googleapis.com/css?family=Lato:400,700,900&display=swap');
+// @import url('https://font.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap');
+// @import url('https://font.googleapis.com/css?family=Quicksand&display=swap');
 /* General */
 body{margin: 0;}
 button{
@@ -34,7 +34,7 @@ hr{border: none!important;}
 .col-2{flex:2!important;}
 .col-3{flex:3!important;}
 .col-4{flex:4!important;}
-.col-group, .col, .wrapper{
+.col-group, .col, .wrapper, .container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +79,7 @@ hr{border: none!important;}
 .as{align-items: flex-start!important;}
 
 /* Fonts */
-h1,h2,h3,h4,h5,h6,p,a{
+h1,h2,h3,h4,h5,h6,p,a, textarea{
     font-family: nudista-web, sans-serif!important;
     margin: 0;
 }
@@ -95,6 +95,9 @@ p{
     @media screen and (max-width: 1200px) {
         font-size: 16px;
     }
+}
+li{
+    font-family: niveau-grotesk, sans-serif;
 }
 h1{
     // font-family: nudista-web, sans-serif;
@@ -117,7 +120,7 @@ h2{
 }
 h3{
     // font-family: roboto, sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 300;
     font-style: normal;
     @media screen and (max-width: 1200px) {
@@ -125,7 +128,7 @@ h3{
     }
 }
 h4{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
     @media screen and (max-width: 1200px) {
@@ -348,6 +351,11 @@ table{
 .hamburger-enter, .hamburger-leave-to {
     transform: rotate(180deg);
     opacity: 0;
+}
+// text highlight
+::selection {
+  color: #fff;
+  background: #ff9933;
 }
 
 // Scrollbar

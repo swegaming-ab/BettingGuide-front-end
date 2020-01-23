@@ -8,7 +8,7 @@
             </p> -->
         </div>
 
-        <div class="col-group content">
+        <div class="col-group content why">
             <div class="col bxs">
                 <img src="../../assets/icons/reason11.png" alt="">
                 <h3 class=" f-gray">Carefully selected</h3>

@@ -5,6 +5,8 @@ import UnderConstruction from '@/views/UnderConstruction'
 import ListView from '@/views/ListView'
 import SingleListView from '@/views/SingleListView'
 import SingleListView2 from '@/views/SingleListView2'
+import academySingle from '@/views/academySingle'
+import academy from '@/views/academy'
 import Flags from '@/views/Flags'
 
 
@@ -45,6 +47,16 @@ export default new Router({
             path: '/flags',
             name: 'Flags',
             component: Flags
+        },
+        {
+            path: '/academy',
+            name: 'academy',
+            component: academy
+        },
+        {
+            path: '/academySingle',
+            name: 'academySingle',
+            component: academySingle
         }
     ]
 })

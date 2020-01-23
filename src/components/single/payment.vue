@@ -2,8 +2,8 @@
     <div class="col-group content as">
         <div class="col">
             <img src="../../assets/icons/tables/payment1.png" class="hi" alt="">
-            <h3 @click="table = 'with'" :class="{inactive: table !== 'with'}" class="f-gray bold">WITHDRAWAL</h3>
-            <h3 @click="table = 'dep'" :class="{inactive: table === 'with'}" class="f-gray bold">DEPOSIT</h3>
+            <h4 @click="table = 'with'" :class="{inactive: table !== 'with'}" class="f-gray bold">WITHDRAWAL</h4>
+            <h4 @click="table = 'dep'" :class="{inactive: table === 'with'}" class="f-gray bold">DEPOSIT</h4>
             <hr>
             <div class="wrap bg-lgray">
                 <div class="table" v-if="table === 'with'">
@@ -178,7 +178,7 @@ export default {
             width: 100%;
             background: #ff9933;
         }
-        h3{margin-right: 15px; opacity: 1; cursor: pointer; transition: .15s ease-in-out;}
+        h4{margin-right: 15px; opacity: 1; cursor: pointer; transition: .15s ease-in-out;}
         .inactive{opacity: .4;}
     }
     .wrap{width: 100%;}

@@ -174,10 +174,10 @@
     top: 59px;
     border-top: 1px solid rgb(218, 218, 218);
     border-bottom: 1px solid rgb(218, 218, 218);
+    background: #f7f7f7;
     margin-bottom: 40px;
     width: 100%;
     z-index: 2;
-    background: #f7f7f7;
     overflow: hidden;
     i{width: 100%; text-align: center; height: 100%; height: 50px;}
     .d{
@@ -187,7 +187,6 @@
         li{
             display: inline;
             padding: 20px;
-            font-family: niveau-grotesk, sans-serif;
             font-weight: bold;
             color: #666666;
             font-size: 14px;

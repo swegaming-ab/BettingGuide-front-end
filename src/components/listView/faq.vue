@@ -20,7 +20,7 @@
               <div class="wrap flex">
                   <div class="col" v-for="i in questions2" :key="i">
                       <div @click="toggle(i.id)" class="q flex" :class="{active: i.id === open}">
-                          <p>{{i.q}}</p><i class="fas fa-caret-down"></i>
+                          <p>{{i.q}}</p><i v-if="open === i.id" class="fas fa-caret-up"></i><i v-else class="fas fa-caret-down"></i>                          
                           <!-- <transition name="dropdown"> -->
                               <div class="a" v-if="i.id === open">
                                   <p>{{i.a}}</p>

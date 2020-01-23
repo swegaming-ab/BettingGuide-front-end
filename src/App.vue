@@ -4,7 +4,7 @@
         <MobileNav/>
         <router-view></router-view>
         <transition name="fade">
-            <ScrollTop v-if="show && !atBottom" @click="scrollTop"/>
+            <ScrollTop v-if="show && !atBottom"/>
         </transition>
         <Footer/>
     </div>
