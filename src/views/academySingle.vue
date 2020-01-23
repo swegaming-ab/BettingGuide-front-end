@@ -28,7 +28,7 @@
                      <li><i class="fas fa-chevron-right"></i>Link and confirm your bank account (IBAN number, bank name, and SWIFT code)</li>
                      <li><i class="fas fa-chevron-right"></i>Deposit funds to your Neteller account</li>
                  </ul>
-                 <div @click="expand = true" class="img-container">
+                 <div @click="expand = true" class="img-container flex">
                      <img src="https://images.prismic.io/sgbg/d4743176-38a6-4d5c-b2a2-2eb7fec97157_Neteller+register.png?auto=compress,format" alt=""/>
                      <p>Click to expand</p>
                  </div>
@@ -93,7 +93,7 @@ a{color: #509bf5; font-weight: bold;}
 .col{
     flex: none;
     width: 100%;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 .container{
     background-image: url('../assets/images/gray2.png');
@@ -101,8 +101,9 @@ a{color: #509bf5; font-weight: bold;}
     color: #666;
 }
 .col-group{
-    width: 900px;
-    padding: 40px;
+    max-width: 100%;
+    width: calc(100% - 20px);
+    padding: 10px;
     margin: 80px 0;
 }
 h3{
@@ -118,8 +119,9 @@ span{
     padding: 20px;
     .img-container{
         cursor: pointer;
-        width: 200px;
-        img{transition: .15s ease-in-out; width: 100%; margin: 0;}
+        width: 100%;
+        margin-top: 20px;
+        img{transition: .15s ease-in-out; width: 80%; margin: 0;}
         p{
             margin-top: 10px;
             text-align: center;
@@ -133,7 +135,7 @@ span{
     }
     ul{
         margin: 0;
-        width: calc(100% - 200px);
+        width: calc(100%);
         li{
             padding: 10px 0;
             i{color: #ff9933; margin-right: 10px; font-size: 14px;}
@@ -172,7 +174,79 @@ img{
         margin-top: 40px;
         width: 100%;
         h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 20px;}
-        textarea{background: #f7f7f7; padding: 5px; max-width: 890px; outline-color: #ff9933;}
+        textarea{background: #f7f7f7; padding: 5px; max-width: 90%; outline-color: #ff9933;}
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .img-full{
+        i{
+            color: #fff; font-size: 72px;
+            right: 100px; top: 50px;
+        }
+        img{height: 80%;}
+    }
+    .col{
+        flex: none;
+        width: 100%;
+        margin: 40px 0;
+    }
+    .col-group{
+        max-width: 100%;
+        width: 900px;
+        padding: 40px;
+        margin: 80px 0;
+    }
+    span{
+        background: #f7f7f7;
+        padding: 20px;
+        .img-container{
+            cursor: pointer;
+            width: 200px;
+        }
+        ul{
+            margin: 0;
+            width: calc(100% - 200px);
+            li{
+                padding: 10px 0;
+                i{color: #ff9933; margin-right: 10px; font-size: 14px;}
+            }
+        }
+    }
+    img{
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+    .foot{
+        margin-top: 40px;
+        width: 100%;
+        button{
+            transition: .15s ease-in-out;
+            i{margin-right: 10px; color: #fff;}
+        }
+        .share{
+            position: relative;
+            width: 100%;
+            .like, .shareBtn{
+                padding: 10px 20px; margin-right: 10px;
+                background: #ff9933; color:#fff;
+                &:hover{background: #e67300;}
+            }
+            .tweet{
+                position: absolute;
+                background: #00acee; color: #fff;
+                right: 0px;
+                padding: 15px 40px;
+                &:hover{background: #0092cc;}
+            }
+            h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 20px;}
+        }
+        .comments{
+            margin-top: 40px;
+            width: 100%;
+            h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 20px;}
+            textarea{background: #f7f7f7; padding: 5px; max-width: 890px; outline-color: #ff9933;}
+        }
     }
 }
 </style>
