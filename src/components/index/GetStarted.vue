@@ -44,7 +44,7 @@
         padding: 80px 0;
         width: 100%;
         // background-image: url('../../assets/images/getstartedbg.png');
-        background-image: url('../../assets/images/triangle1.png');
+        
         background-size: 100% 100%;
     }
 }

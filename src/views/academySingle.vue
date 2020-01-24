@@ -81,11 +81,11 @@ a{color: #509bf5; font-weight: bold;}
     i{
         cursor: pointer;
         position: absolute;
-        color: #fff; font-size: 72px;
+        color: #fff; font-size: 62px;
         right: 100px; top: 50px;
         transition: .15s ease-in-out;
         &:hover{
-            transform: rotate(10deg);
+
         }
     }
     img{height: 80%;}
@@ -129,7 +129,6 @@ span{
         &:hover{
             img{
                 box-shadow: 0 4px 8px 0 rgba(108,127,135,.5), 0 1px 4px 0 rgba(108,127,135,.6);
-
             }
         }
     }
@@ -156,16 +155,22 @@ img{
     .share{
         position: relative;
         width: 100%;
+        .like{margin-right: 10px;}
         .like, .shareBtn{
-            padding: 10px 20px; margin-right: 10px;
+            width: calc(50% - 5px);
+            padding: 15px 0px;
             background: #ff9933; color:#fff;
+            text-transform: capitalize;
             &:hover{background: #e67300;}
         }
         .tweet{
-            position: absolute;
+            // position: absolute;
+            text-transform: capitalize;
+            margin-top: 10px;
             background: #00acee; color: #fff;
             right: 0px;
             padding: 15px 40px;
+            width: 100%;
             &:hover{background: #0092cc;}
         }
         h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 20px;}

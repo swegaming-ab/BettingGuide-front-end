@@ -37,7 +37,7 @@ export default {
     padding: 40px 10px;
     // background: #fff8e6;
     @media only screen and (min-width: 1200px) {
-        background-image: url('../../assets/images/calculator.png');
+        // background-image: url('../../assets/images/calculator.png');
         background-size: 100% 100%;
         padding: 80px 0;
         margin: 40px 0;
@@ -49,7 +49,7 @@ export default {
     top: 0px;
     left: 0;
     content: "";
-    background-image: url('../../assets/images/waves1.png');
+    // background-image: url('../../assets/images/waves1.png');
     background-size: cover;
     z-index: 2;
     width: 100%;

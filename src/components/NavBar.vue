@@ -29,7 +29,7 @@
                         <transition name="fade"><i v-if="!hover" class="fas fa-chevron-down"></i></transition>
                     </li>
                 </router-link>
-                <router-link :to="'single2'">
+                <router-link :to="'about'">
                     <li @mouseenter="hover = true" @mouseleave="hover = false">
                         About
                         <transition name="fade"><i v-if="hover" class="fas fa-chevron-up"></i></transition>
@@ -46,7 +46,6 @@
             </div>
         </div>
 
-        <!-- <transition name="fade"> -->
         <div @mouseenter="hover = true" @mouseleave="hover = false" v-if="hover" class="dropdown bb">
             <div class="col-group">
                 <ul>
@@ -59,7 +58,6 @@
                 </ul>
             </div>
         </div>
-        <!-- </transition> -->
         <Bell/>
 
     </div>
@@ -93,6 +91,7 @@
 <style lang="scss" scoped>
 li{list-style-type: none;}
     .navBar{
+        display: none;
         position: fixed;
         top: 0; left: 0;
         z-index: 9;
