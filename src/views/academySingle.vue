@@ -1,10 +1,20 @@
 <template>
   <div class="container">
-      <div class="col-group bg-white">
-          <img src="https://www.gamespectrum.bg/images/PR_BOSA_1320x660.png" alt="">
+      <div class="head flex">
+          <!-- <img src="../assets/icons/payment/skrill.png" alt=""> -->
+          <h1 class="f-white"><span class="bold f-orange">Neteller</span> India Guide (2020)</h1>
+          <div class="overlay"></div>
+      </div>
+      <div class="sticky flex bxs" id="sticky">
+          <ul class="flex">
+              <li>what is neteller</li><li>how to create an account</li><li>share</li><li>comment</li>
+          </ul>
+      </div>
+      <div class="col-group">
           <div class="col">
               <h3>Neteller India Guide (2020)</h3>
               <span>
+                  <img src="https://www.gamespectrum.bg/images/PR_BOSA_1320x660.png" alt="">
                   <p>Learning how to use Neteller or other E-wallets is essential for gambling if you are an Indian resident. </p>
                   <p>When it comes to gambling legally in India, one of the biggest challenges is finding a safe, legal and secure method of depositing and withdrawing money to gambling sites.</p>
                   <p>E-wallets are by far the best option for depositing and withdrawing money, but only some e-wallets are accepted by legal gambling sites. Neteller and Skrill are our recommended options.</p>
@@ -12,9 +22,9 @@
           </div>
           <div class="col">
               <h3>What is Neteller?</h3>
-              <span>
+              <span class="flex">
                   <p>Neteller is an eWallet that has been around since 1999 and has over 230 million account holders worldwide. It is free to create an account, and you can use the app which is available on GooglePlay and the App Store or use their desktop site.</p>
-                  <p><a href="https://www.youtube.com/watch?v=MtufD-6_z_0&amp;feature=youtu.be">https://www.youtube.com/watch?v=MtufD-6_z_0&amp;feature=youtu.be</a></p>
+                  <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
               </span>
           </div>
           <div class="col">
@@ -37,13 +47,17 @@
           <div class="foot">
               <div class="share">
                   <h4>share post</h4>
-                  <button type="button" class="like" name="button"><i class="fas fa-thumbs-up"></i>like</button>
-                  <button type="button" class="shareBtn" name="button">share</button>
-                  <button type="button" class="tweet" name="button"><i class="fab fa-twitter"></i>tweet</button>
+                  <div class="content">
+                      <button type="button" class="like" name="button"><i class="fas fa-thumbs-up"></i>like</button>
+                      <button type="button" class="shareBtn" name="button">share</button>
+                      <button type="button" class="tweet" name="button"><i class="fab fa-twitter"></i>tweet</button>
+                  </div>
               </div>
               <div class="comments">
                   <h4>comments</h4>
-                  <textarea name="name" rows="8" placeholder="Write a comment" cols="80"></textarea>
+                  <div class="content">
+                      <textarea name="name" rows="8" placeholder="Write a comment" cols="80"></textarea>
+                  </div>
               </div>
           </div>
       </div>
@@ -72,6 +86,48 @@ export default {
 </script>
 <style lang="scss" scoped>
 a{color: #509bf5; font-weight: bold;}
+.head{
+    position: relative;
+    background-image: url('../assets/images/noise2.jpg');
+    background-size: cover;
+    // height: 20vh;
+    width: 100%;
+    padding: 120px 0;
+    img{z-index: 2; width: 600px; margin: 0;
+        // filter: drop-shadow(2px 2px 2px #fff);
+    }
+    span{background: transparent; margin: 0; padding: 0;}
+    h1{
+        width: 100%; text-align: center;
+        margin-top: 0px;
+        z-index: 2;
+        font-weight: lighter;
+        // text-shadow: 2px 2px 2px #FFFFFF;
+    }
+    .overlay{
+        z-index: 1;
+        position: absolute; top: 0; left: 0;
+        background: #0e5f07; opacity: .8;
+        width: 100%;
+        height: 100%;
+    }
+}
+.sticky{
+    position: sticky; top: 60px;
+    width: 100%; background: #f7f7f7;
+    ul{height: 50px; padding: 0; margin: 0;}
+    li{
+        cursor: pointer;
+        font-size: 14px; font-weight: bold;
+        text-transform: uppercase;
+        display: flex; align-items: center; justify-content: center;
+        height: 50px;
+        padding: 0px 30px;
+        &:hover{
+            background: #e6e6e6;
+        }
+    }
+}
 .img-full{
     position: fixed;
     height: 100vh; width: 100vw;
@@ -90,13 +146,24 @@ a{color: #509bf5; font-weight: bold;}
     }
     img{height: 80%;}
 }
+iframe{
+    border: none;
+    width: 100%;
+    height: 200px;
+    @media only screen and (min-width: 600px) {
+        width: 680px;
+        height: 400px;
+    }
+}
 .col{
     flex: none;
     width: 100%;
     margin: 20px 0;
+    // background: #fff;
 }
 .container{
-    background-image: url('../assets/images/gray2.png');
+    // background-image: url('../assets/images/gray.png');
+    background: #fff;
     background-size: cover;
     color: #666;
 }
@@ -104,10 +171,11 @@ a{color: #509bf5; font-weight: bold;}
     max-width: 100%;
     width: calc(100% - 20px);
     padding: 10px;
-    margin: 80px 0;
+    // margin: 40px 0;
 }
 h3{
     font-weight: bold;
+    text-transform: uppercase;
     border-bottom: 2px solid #ff9933;
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -116,7 +184,8 @@ p{margin-bottom: 20px;}
 h3,p{width: 100%; text-align: left;}
 span{
     background: #f7f7f7;
-    padding: 20px;
+    background: #fff;
+    // padding: 20px;
     .img-container{
         cursor: pointer;
         width: 100%;
@@ -148,6 +217,17 @@ img{
 .foot{
     margin-top: 40px;
     width: 100%;
+    h4{
+        padding-bottom: 5px;
+        border-bottom: 2px solid #ff9933;
+        margin-bottom: 5px;
+    }
+    .content{
+        background: #f7f7f7;
+        margin: 0;
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
     button{
         transition: .15s ease-in-out;
         i{margin-right: 10px; color: #fff;}
@@ -173,13 +253,13 @@ img{
             width: 100%;
             &:hover{background: #0092cc;}
         }
-        h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 20px;}
+        h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 5px;}
     }
     .comments{
         margin-top: 40px;
         width: 100%;
-        h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 20px;}
-        textarea{background: #f7f7f7; padding: 5px; max-width: 90%; outline-color: #ff9933;}
+        h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 5px;}
+        textarea{background: #fff; padding: 5px; max-width: 90%; outline-color: #ff9933;}
     }
 }
 
@@ -200,10 +280,11 @@ img{
         max-width: 100%;
         width: 900px;
         padding: 40px;
-        margin: 80px 0;
+        // margin: 40px 0;
     }
     span{
         background: #f7f7f7;
+        // background: #fff;
         padding: 20px;
         .img-container{
             cursor: pointer;
@@ -222,9 +303,10 @@ img{
         margin-bottom: 40px;
         max-width: 100%;
     }
-    .foot{
+    .content{
         margin-top: 40px;
         width: 100%;
+        span{width: 100%;}
         button{
             transition: .15s ease-in-out;
             i{margin-right: 10px; color: #fff;}
@@ -244,7 +326,7 @@ img{
                 padding: 15px 40px;
                 &:hover{background: #0092cc;}
             }
-            h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 20px;}
+            h4{font-weight: bold; width: 100%; text-transform: uppercase; margin-bottom: 0px;}
         }
         .comments{
             margin-top: 40px;

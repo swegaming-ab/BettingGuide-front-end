@@ -8,41 +8,41 @@
               <div class="content flex">
                   <button type="button" name="button">
                       <img src="../assets/icons/academy/basics1.png" class="ri" alt="">
-                      <img src="../assets/icons/academy/basics2.png" class="ol" alt="">
                       <h3>Basics</h3>
                   </button>
                   <button type="button" name="button">
                       <img src="../assets/icons/academy/betting1.png" class="ri" alt="">
-                      <img src="../assets/icons/academy/betting2.png" class="ol" alt="">
                       <h3>Betting</h3>
                   </button>
                   <button type="button" name="button">
                       <img src="../assets/icons/academy/casino1.png" class="ri" alt="">
-                      <img src="../assets/icons/academy/casino2.png" class="ol" alt="">
                       <h3>Casino</h3>
                   </button>
-                  <button type="button" name="button">
+                  <!-- <button type="button" name="button">
                       <img src="../assets/icons/academy/bingo1.png" class="ri" alt="">
-                      <img src="../assets/icons/academy/bingo2.png" class="ol" alt="">
                       <h3>Bingo</h3>
-                  </button>
+                  </button> -->
                   <button type="button" name="button">
                       <img src="../assets/icons/academy/safety1.png" class="ri" alt="">
-                      <img src="../assets/icons/academy/safety2.png" class="ol" alt="">
                       <h3>Safety</h3>
                   </button>
               </div>
           </div>
       </div>
+      <div class="sticky flex bxs" id="sticky">
+          <ul class="flex f-gray">
+              <li>basics</li><li>betting</li><li>casino</li><li>safety</li>
+          </ul>
+      </div>
       <div class="container section w100 bg-white">
           <div class="col-group fs">
               <h3 class="f-gray bold">Basics</h3>
               <a href="/academySingle" v-for="i in basics" :key="i" class="flex bg-lgray">
-                  <img src="https://images.theconversation.com/files/250674/original/file-20181214-185261-17r6cj9.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip" alt="">
+                  <img src="http://0f1742af55bee860f36c-ebef04bbf8ee88a49eb41a699a568a25.r5.cf2.rackcdn.com/uploaded/b/0e7383801_1527608011_back-to-basics-sermon.png" alt="">
                   <div class="content flex as">
                       <span>
                           <h4>Title of post</h4>
-                          <p>Content text of post.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       </span>
                   </div>
               </a>
@@ -55,7 +55,7 @@
                   <img src="https://www.independent.co.ug/wp-content/uploads/2019/02/sports-betting.jpg" alt="">
                   <div class="content flex as">
                       <h4>Title of post</h4>
-                      <p>Content text of post.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
               </a>
           </div>
@@ -90,6 +90,22 @@ export default {
 
     }
 }
+.sticky{
+    position: sticky; top: 60px;
+    width: 100%; background: #f7f7f7;
+    ul{height: 50px; padding: 0; margin: 0;}
+    li{
+        cursor: pointer;
+        font-size: 14px; font-weight: bold;
+        text-transform: uppercase;
+        display: flex; align-items: center; justify-content: center;
+        height: 50px;
+        padding: 0px 30px;
+        &:hover{
+            background: #e6e6e6;
+        }
+    }
+}
 .section .col-group{
     width: calc(100% - 10px);
     justify-content: center!important;
@@ -111,7 +127,7 @@ export default {
         width: 70px;
     }
     a{
-        height: 80px;
+        // height: 80px;
         width: calc(100%);
         overflow: hidden;
         background: #fff;
@@ -130,11 +146,13 @@ export default {
     }
     @media only screen and (min-width: 600px) {
         img{
-            width: 170px;
+            width: 100%;
+            height: auto;
         }
         a{
-            height: 120px;
-            width: calc(50% - 5px);
+            // height: 120px;
+            padding: 10px;
+            width: calc(33.3% - 25px);
             background: #fff;
             margin-bottom: 10px;
             transition: .15s ease-in-out;
@@ -146,7 +164,10 @@ export default {
             height: calc(100% - 20px);
             padding: 10px;
             flex: 3;
-            p,h4{width: 100%; color: #666666;}
+            h4{
+                font-weight: bold; color: #ff9933; margin: 10px 0; text-transform: uppercase;
+            }
+            p,h4{width: 100%;}
         }
     }
 }
@@ -164,13 +185,20 @@ export default {
 }
 .head{
     position: relative;
-    background-image: url('../assets/images/bg.jpg');
-    background-image: url('../assets/images/test.png');
-    background-size: 100% 100%;
+    background: #f7f7f7;
+    background-image: url('../assets/images/noise2.jpg');
+    background-size: cover;
     width: 100%;
     padding-top: 120px;
-    height: 50vh;
+    height: 30vh;
     padding-bottom: 100px;
+    .overlay{
+        z-index: 1;
+        position: absolute; top: 0; left: 0;
+        background: #0e5f07; opacity: .8;
+        width: 100%;
+        height: 100%;
+    }
     h1{
         z-index: 2;
         color: #fff;
@@ -189,42 +217,33 @@ export default {
     }
 }
 button{
+    position: relative;
     display: flex;
     align-items: center;
     height: 50px;
     width: 100%;
-    margin: 2.5px 5px;
+    margin: 0 10px;
+    border-radius: 100px;
     transition: .15s ease-in-out;
     background: #ff9933;
     h3{margin-top: 0px; color: #fff; font-weight: bold;}
     img{margin: 0 20px; width: 30px!important;}
-    .ol{display: none;}
     @media only screen and (min-width: 600px) {
         display: block;
-        height: 200px;
-        margin: 2.5px;
-        width: 200px;
+        height: 150px;
+        margin: 0 20px;
+        width: 150px;
         transition: .15s ease-in-out;
-        h3{margin-top: 20px;}
-        img{margin: 0; width: 100px!important;}
-        .ol{display: none;}
-        &:hover{
-            background: #fff;
-            h3{color: #ff9933;}
-            .ol{display: inline;}
-            .ri{display: none;}
+        h3{
+            position: absolute;
+            bottom: -40px;
+            font-weight: lighter;
+            left: 50%; transform: translateX(-50%);
         }
-    }
-}
-button:nth-child(even){
-    background: #e67300;
-    transition: .15s ease-in-out;
-    @media only screen and (min-width: 600px) {
+        img{margin: 0; width: 80px!important;}
         &:hover{
-            background: #fff;
-            h3{color: #ff9933;}
-            .ol{display: inline;}
-            .ri{display: none;}
+            background: #e67300;
+            h3{font-weight: bold;}
         }
     }
 }
